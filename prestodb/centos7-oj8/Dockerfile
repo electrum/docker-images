@@ -10,7 +10,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM library/centos:6.9
+FROM library/centos:7.6.1810
 MAINTAINER Presto community <https://prestosql.io/community.html>
 
 ARG JDK_URL
