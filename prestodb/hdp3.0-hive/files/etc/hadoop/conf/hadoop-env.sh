@@ -23,5 +23,5 @@
 export HADOOP_HEAPSIZE=256
 
 # Extra Java runtime options.  Empty by default.
-export HADOOP_NAMENODE_OPTS="$HADOOP_NAMENODE_OPTS -Xmx512m"
+export HDFS_NAMENODE_OPTS="$HDFS_NAMENODE_OPTS -Xmx512m"
 export YARN_OPTS="$YARN_OPTS -Xmx256m"

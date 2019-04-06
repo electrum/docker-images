@@ -10,14 +10,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM prestodb/centos6-oj8:unlabelled
+FROM prestodb/centos7-oj8:unlabelled
 MAINTAINER Presto community <https://prestosql.io/community.html>
 
 # Change default timezone
 RUN ln -snf "/usr/share/zoneinfo/Asia/Kathmandu" /etc/localtime && echo "Asia/Kathmandu" > /etc/timezone
 
 # Install HDP repo
-RUN wget -nv http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.6.5.0/hdp.repo -P /etc/yum.repos.d
+RUN wget -nv http://public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.0.1.0/hdp.repo -P /etc/yum.repos.d
 
 # Install Hadoop, Hive (w/ MySQL)
 RUN yum install -y \
